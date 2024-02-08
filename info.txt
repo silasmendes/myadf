@@ -1,0 +1,6 @@
+selected resource name:		createDataProductPqdMeasurements
+selected resource type:		pipeline
+factory name:			mrs-data-datafactory-prod
+factory location:		westeurope
+subscription id:		899f8360-51e7-48d5-a1d8-9461072fc556
+time of download (UTC):		Fri, 26 Jan 2024 10:32:08 GMT
