@@ -1,0 +1,57 @@
+{
+	"name": "ds_stg_asnseedesadv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "zncswb2bedianalyticsprd-WorkspaceDefaultSqlServer",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"DBName": "edianalyticsprd"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "File_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Asn_Ref",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Asn_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Asn_Add",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Asn_WeightAndVolume",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Asn_Qty",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Asn_Txt",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Asn_AmountDetails",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Asn_Currency",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "stg",
+			"table": "AsnSeedesadv"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

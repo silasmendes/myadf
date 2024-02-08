@@ -1,0 +1,897 @@
+{
+	"name": "ds_edihome_json_seedesadv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "zncswb2bedianalyticsprd-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "edihome"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"prop": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"k": {
+								"type": "string"
+							},
+							"v": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"seeag": {
+					"type": "object",
+					"properties": {
+						"copyright": {
+							"type": "string"
+						},
+						"creationdate": {
+							"type": "string"
+						},
+						"message": {
+							"type": "string"
+						},
+						"mapping": {
+							"type": "null"
+						},
+						"version": {
+							"type": "null"
+						}
+					}
+				},
+				"cnt": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"ic": {
+								"type": "object",
+								"properties": {
+									"transmissiondate": {
+										"type": "string"
+									},
+									"transmissiontime": {
+										"type": "string"
+									},
+									"interchangecontrolnumber": {
+										"type": "string"
+									},
+									"sender": {
+										"type": "string"
+									},
+									"senderqualifier": {
+										"type": "null"
+									},
+									"reverseroutingaddress": {
+										"type": "null"
+									},
+									"receiver": {
+										"type": "string"
+									},
+									"receiverqualifier": {
+										"type": "null"
+									},
+									"routingaddress": {
+										"type": "null"
+									},
+									"testflag": {
+										"type": "null"
+									},
+									"receiverpassword": {
+										"type": "null"
+									},
+									"receiverpasswordqualifier": {
+										"type": "null"
+									},
+									"responserequired": {
+										"type": "null"
+									},
+									"applicationreference": {
+										"type": "null"
+									},
+									"processprio": {
+										"type": "null"
+									},
+									"communicationagreement": {
+										"type": "null"
+									},
+									"syntaxidentifier": {
+										"type": "null"
+									},
+									"syntaxversion": {
+										"type": "null"
+									},
+									"additionalinfo": {
+										"type": "null"
+									},
+									"ref": {
+										"type": "null"
+									}
+								}
+							},
+							"filterset": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"key01": {
+											"type": "string"
+										},
+										"key02": {
+											"type": "null"
+										},
+										"key03": {
+											"type": "string"
+										},
+										"key04": {
+											"type": "null"
+										},
+										"key05": {
+											"type": "string"
+										},
+										"key06": {
+											"type": "string"
+										},
+										"key07": {
+											"type": "string"
+										},
+										"key08": {
+											"type": "string"
+										},
+										"key09": {
+											"type": "string"
+										},
+										"key10": {
+											"type": "string"
+										}
+									}
+								}
+							},
+							"grp": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"fg": {
+											"type": "null"
+										},
+										"msg": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"me": {
+														"type": "object",
+														"properties": {
+															"messagenumber": {
+																"type": "null"
+															},
+															"messagetype": {
+																"type": "string"
+															},
+															"messagetypeversion": {
+																"type": "null"
+															},
+															"messagetyperelease": {
+																"type": "null"
+															},
+															"controllingagency": {
+																"type": "null"
+															},
+															"assocassignedcode": {
+																"type": "null"
+															},
+															"sequenceoftransfer": {
+																"type": "null"
+															},
+															"commonaccessreference": {
+																"type": "null"
+															},
+															"firstandlasttransfer": {
+																"type": "null"
+															},
+															"additionalinfo": {
+																"type": "null"
+															}
+														}
+													},
+													"transportdetails": {
+														"type": "object",
+														"properties": {
+															"transportnumber": {
+																"type": "string"
+															},
+															"modeoftransport": {
+																"type": "string"
+															},
+															"additionaldetails": {
+																"type": "array",
+																"items": {
+																	"type": "object",
+																	"properties": {
+																		"qualifier": {
+																			"type": "string"
+																		},
+																		"details": {
+																			"type": "string"
+																		}
+																	}
+																}
+															},
+															"date": {
+																"type": "array",
+																"items": {
+																	"type": "object",
+																	"properties": {
+																		"qualifier": {
+																			"type": "string"
+																		},
+																		"date": {
+																			"type": "string"
+																		},
+																		"time": {
+																			"type": "string"
+																		},
+																		"additionalinfo": {
+																			"type": "string"
+																		}
+																	}
+																}
+															}
+														}
+													},
+													"add": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"qualifier": {
+																	"type": "string"
+																},
+																"identifier": {
+																	"type": "string"
+																},
+																"agencycode": {
+																	"type": "string"
+																},
+																"name1": {
+																	"type": "string"
+																},
+																"name2": {
+																	"type": "string"
+																},
+																"name3": {
+																	"type": "null"
+																},
+																"name4": {
+																	"type": "null"
+																},
+																"name5": {
+																	"type": "null"
+																},
+																"partyname1": {
+																	"type": "null"
+																},
+																"partyname2": {
+																	"type": "null"
+																},
+																"partyname3": {
+																	"type": "null"
+																},
+																"partyname4": {
+																	"type": "null"
+																},
+																"partyname5": {
+																	"type": "null"
+																},
+																"street1": {
+																	"type": "string"
+																},
+																"street2": {
+																	"type": "null"
+																},
+																"street3": {
+																	"type": "null"
+																},
+																"street4": {
+																	"type": "null"
+																},
+																"pobox": {
+																	"type": "null"
+																},
+																"city": {
+																	"type": "string"
+																},
+																"state": {
+																	"type": "null"
+																},
+																"postalcode": {
+																	"type": "string"
+																},
+																"countrycode": {
+																	"type": "null"
+																},
+																"country": {
+																	"type": "string"
+																},
+																"additionaldata": {
+																	"type": "array",
+																	"items": {
+																		"type": "object",
+																		"properties": {
+																			"qualifier": {
+																				"type": "string"
+																			},
+																			"data": {
+																				"type": "string"
+																			}
+																		}
+																	}
+																},
+																"contact": {
+																	"type": "null"
+																},
+																"accountinformation": {
+																	"type": "null"
+																},
+																"txt": {
+																	"type": "null"
+																}
+															}
+														}
+													},
+													"weightandvolume": {
+														"type": "object",
+														"properties": {
+															"netweight": {
+																"type": "string"
+															},
+															"grossweight": {
+																"type": "string"
+															},
+															"taraweight": {
+																"type": "null"
+															},
+															"unitofweight": {
+																"type": "string"
+															},
+															"length": {
+																"type": "null"
+															},
+															"width": {
+																"type": "null"
+															},
+															"height": {
+																"type": "null"
+															},
+															"measurementunit": {
+																"type": "null"
+															},
+															"volume": {
+																"type": "null"
+															},
+															"unitofvolume": {
+																"type": "null"
+															}
+														}
+													},
+													"qty": {
+														"type": "null"
+													},
+													"txt": {
+														"type": "null"
+													},
+													"amountdetails": {
+														"type": "null"
+													},
+													"currency": {
+														"type": "null"
+													},
+													"asn": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"ref": {
+																	"type": "array",
+																	"items": {
+																		"type": "object",
+																		"properties": {
+																			"qualifier": {
+																				"type": "string"
+																			},
+																			"reference": {
+																				"type": "null"
+																			},
+																			"referencedate": {
+																				"type": "null"
+																			},
+																			"referencetime": {
+																				"type": "null"
+																			},
+																			"additionalinfo": {
+																				"type": "null"
+																			}
+																		}
+																	}
+																},
+																"date": {
+																	"type": "array",
+																	"items": {
+																		"type": "object",
+																		"properties": {
+																			"qualifier": {
+																				"type": "string"
+																			},
+																			"date": {
+																				"type": "string"
+																			},
+																			"time": {
+																				"type": "string"
+																			},
+																			"additionalinfo": {
+																				"type": "null"
+																			}
+																		}
+																	}
+																},
+																"add": {
+																	"type": "array",
+																	"items": {
+																		"type": "object",
+																		"properties": {
+																			"qualifier": {
+																				"type": "string"
+																			},
+																			"identifier": {
+																				"type": "string"
+																			},
+																			"agencycode": {
+																				"type": "null"
+																			},
+																			"name1": {
+																				"type": "null"
+																			},
+																			"name2": {
+																				"type": "null"
+																			},
+																			"name3": {
+																				"type": "null"
+																			},
+																			"name4": {
+																				"type": "null"
+																			},
+																			"name5": {
+																				"type": "null"
+																			},
+																			"partyname1": {
+																				"type": "null"
+																			},
+																			"partyname2": {
+																				"type": "null"
+																			},
+																			"partyname3": {
+																				"type": "null"
+																			},
+																			"partyname4": {
+																				"type": "null"
+																			},
+																			"partyname5": {
+																				"type": "null"
+																			},
+																			"street1": {
+																				"type": "null"
+																			},
+																			"street2": {
+																				"type": "null"
+																			},
+																			"street3": {
+																				"type": "null"
+																			},
+																			"street4": {
+																				"type": "null"
+																			},
+																			"pobox": {
+																				"type": "null"
+																			},
+																			"city": {
+																				"type": "null"
+																			},
+																			"state": {
+																				"type": "null"
+																			},
+																			"postalcode": {
+																				"type": "null"
+																			},
+																			"countrycode": {
+																				"type": "null"
+																			},
+																			"country": {
+																				"type": "null"
+																			},
+																			"additionaldata": {
+																				"type": "null"
+																			},
+																			"contact": {
+																				"type": "null"
+																			},
+																			"accountinformation": {
+																				"type": "null"
+																			},
+																			"txt": {
+																				"type": "null"
+																			}
+																		}
+																	}
+																},
+																"weightandvolume": {
+																	"type": "object",
+																	"properties": {
+																		"netweight": {
+																			"type": "string"
+																		},
+																		"grossweight": {
+																			"type": "string"
+																		},
+																		"taraweight": {
+																			"type": "null"
+																		},
+																		"unitofweight": {
+																			"type": "string"
+																		},
+																		"length": {
+																			"type": "null"
+																		},
+																		"width": {
+																			"type": "null"
+																		},
+																		"height": {
+																			"type": "null"
+																		},
+																		"measurementunit": {
+																			"type": "null"
+																		},
+																		"volume": {
+																			"type": "string"
+																		},
+																		"unitofvolume": {
+																			"type": "string"
+																		}
+																	}
+																},
+																"qty": {
+																	"type": "null"
+																},
+																"txt": {
+																	"type": "null"
+																},
+																"amountdetails": {
+																	"type": "null"
+																},
+																"currency": {
+																	"type": "null"
+																},
+																"seeitem": {
+																	"type": "array",
+																	"items": {
+																		"type": "object",
+																		"properties": {
+																			"itempos": {
+																				"type": "object",
+																				"properties": {
+																					"lineitemnumber": {
+																						"type": "string"
+																					},
+																					"linesubitemnumber": {
+																						"type": "string"
+																					},
+																					"countryoforigin": {
+																						"type": "string"
+																					},
+																					"itemdescription": {
+																						"type": "array",
+																						"items": {
+																							"type": "string"
+																						}
+																					}
+																				}
+																			},
+																			"itemnumber": {
+																				"type": "array",
+																				"items": {
+																					"type": "object",
+																					"properties": {
+																						"qualifier": {
+																							"type": "string"
+																						},
+																						"itemnumber": {
+																							"type": "string"
+																						},
+																						"additionalinfo": {
+																							"type": "null"
+																						}
+																					}
+																				}
+																			},
+																			"qty": {
+																				"type": "array",
+																				"items": {
+																					"type": "object",
+																					"properties": {
+																						"qualifier": {
+																							"type": "string"
+																						},
+																						"quantity": {
+																							"type": "string"
+																						},
+																						"quantityunit": {
+																							"type": "string"
+																						}
+																					}
+																				}
+																			},
+																			"amountdetails": {
+																				"type": "null"
+																			},
+																			"ref": {
+																				"type": "array",
+																				"items": {
+																					"type": "object",
+																					"properties": {
+																						"qualifier": {
+																							"type": "string"
+																						},
+																						"reference": {
+																							"type": "string"
+																						},
+																						"referencedate": {
+																							"type": "null"
+																						},
+																						"referencetime": {
+																							"type": "null"
+																						},
+																						"additionalinfo": {
+																							"type": "null"
+																						}
+																					}
+																				}
+																			},
+																			"date": {
+																				"type": "null"
+																			},
+																			"add": {
+																				"type": "array",
+																				"items": {
+																					"type": "object",
+																					"properties": {
+																						"qualifier": {
+																							"type": "string"
+																						},
+																						"identifier": {
+																							"type": "string"
+																						},
+																						"agencycode": {
+																							"type": "null"
+																						},
+																						"name1": {
+																							"type": "null"
+																						},
+																						"name2": {
+																							"type": "null"
+																						},
+																						"name3": {
+																							"type": "null"
+																						},
+																						"name4": {
+																							"type": "null"
+																						},
+																						"name5": {
+																							"type": "null"
+																						},
+																						"partyname1": {
+																							"type": "null"
+																						},
+																						"partyname2": {
+																							"type": "null"
+																						},
+																						"partyname3": {
+																							"type": "null"
+																						},
+																						"partyname4": {
+																							"type": "null"
+																						},
+																						"partyname5": {
+																							"type": "null"
+																						},
+																						"street1": {
+																							"type": "null"
+																						},
+																						"street2": {
+																							"type": "null"
+																						},
+																						"street3": {
+																							"type": "null"
+																						},
+																						"street4": {
+																							"type": "null"
+																						},
+																						"pobox": {
+																							"type": "null"
+																						},
+																						"city": {
+																							"type": "null"
+																						},
+																						"state": {
+																							"type": "null"
+																						},
+																						"postalcode": {
+																							"type": "null"
+																						},
+																						"countrycode": {
+																							"type": "null"
+																						},
+																						"country": {
+																							"type": "null"
+																						},
+																						"additionaldata": {
+																							"type": "null"
+																						},
+																						"contact": {
+																							"type": "null"
+																						},
+																						"accountinformation": {
+																							"type": "null"
+																						},
+																						"txt": {
+																							"type": "null"
+																						}
+																					}
+																				}
+																			},
+																			"weightandvolume": {
+																				"type": "object",
+																				"properties": {
+																					"netweight": {
+																						"type": "string"
+																					},
+																					"grossweight": {
+																						"type": "string"
+																					},
+																					"taraweight": {
+																						"type": "null"
+																					},
+																					"unitofweight": {
+																						"type": "string"
+																					},
+																					"length": {
+																						"type": "null"
+																					},
+																					"width": {
+																						"type": "null"
+																					},
+																					"height": {
+																						"type": "null"
+																					},
+																					"measurementunit": {
+																						"type": "null"
+																					},
+																					"volume": {
+																						"type": "null"
+																					},
+																					"unitofvolume": {
+																						"type": "null"
+																					}
+																				}
+																			},
+																			"txt": {
+																				"type": "null"
+																			},
+																			"dangerousgoods": {
+																				"type": "null"
+																			},
+																			"pac": {
+																				"type": "object",
+																				"properties": {
+																					"_package": {
+																						"type": "array",
+																						"items": {
+																							"type": "object",
+																							"properties": {
+																								"label": {
+																									"type": "string"
+																								},
+																								"packagepartnumbercustomer": {
+																									"type": "string"
+																								},
+																								"packagepartnumbersupplier": {
+																									"type": "string"
+																								},
+																								"numberofpackages": {
+																									"type": "string"
+																								},
+																								"packagenumberfrom": {
+																									"type": "string"
+																								},
+																								"packagenumberto": {
+																									"type": "null"
+																								},
+																								"batchnumber": {
+																									"type": "string"
+																								},
+																								"quantityperpackage": {
+																									"type": "string"
+																								},
+																								"quantityunit": {
+																									"type": "string"
+																								},
+																								"accessory": {
+																									"type": "null"
+																								},
+																								"weightandvolume": {
+																									"type": "null"
+																								},
+																								"ref": {
+																									"type": "array",
+																									"items": {
+																										"type": "object",
+																										"properties": {
+																											"qualifier": {
+																												"type": "string"
+																											},
+																											"reference": {
+																												"type": "string"
+																											},
+																											"referencedate": {
+																												"type": "null"
+																											},
+																											"referencetime": {
+																												"type": "null"
+																											},
+																											"additionalinfo": {
+																												"type": "null"
+																											}
+																										}
+																									}
+																								},
+																								"date": {
+																									"type": "null"
+																								}
+																							}
+																						}
+																					},
+																					"pallet": {
+																						"type": "null"
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

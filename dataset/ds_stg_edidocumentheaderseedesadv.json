@@ -1,0 +1,165 @@
+{
+	"name": "ds_stg_edidocumentheaderseedesadv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "zncswb2bedianalyticsprd-WorkspaceDefaultSqlServer",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"DBName": "edianalyticsprd"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "File_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Prop_MtPrefix",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Prop_Trackid",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Prop_Adapter",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Prop_Magnaplant",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Prop_Partner",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Prop_Docgroup",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Prop_Doctype",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Prop_Direction",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Prop_StartTime",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Seeag_Copyright",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Seeag_CreationDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Seeag_Message",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Seeag_Mapping",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Seeag_Version",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_TransmissionDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_TransmissionTime",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_InterchangeControlNumber",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_Sender",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_SenderQualifier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_ReverseRoutingAddress",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_Receiver",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_ReceiverQualifier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_RoutingAddress",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_Testflag",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_ReceiverPassword",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_ReceiverPasswordQualifier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_ResponseRequired",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_ApplicationReference",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_ProcessPrio",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_CommunicationAgreement",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_SyntaxIdentifier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_SyntaxVersion",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_AdditionalInfo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ic_Ref",
+				"type": "varchar"
+			},
+			{
+				"name": "Ic_FilterSet",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "stg",
+			"table": "EDIDocumentHeaderSeedesadv"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

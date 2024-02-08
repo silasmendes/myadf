@@ -1,0 +1,114 @@
+{
+	"name": "ds_stg_msgseedesadv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "zncswb2bedianalyticsprd-WorkspaceDefaultSqlServer",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"DBName": "edianalyticsprd"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "File_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Me_MessageNumber",
+				"type": "varchar"
+			},
+			{
+				"name": "Me_MessageType",
+				"type": "varchar"
+			},
+			{
+				"name": "Me_MessageTypeVersion",
+				"type": "varchar"
+			},
+			{
+				"name": "Me_MessageTypeRelease",
+				"type": "varchar"
+			},
+			{
+				"name": "Me_ControllingAgency",
+				"type": "varchar"
+			},
+			{
+				"name": "Me_AssocAssignedCode",
+				"type": "varchar"
+			},
+			{
+				"name": "Me_CommonAccessReference",
+				"type": "varchar"
+			},
+			{
+				"name": "Me_SequenceOfTransfer",
+				"type": "varchar"
+			},
+			{
+				"name": "Me_FirstAndLastTransfer",
+				"type": "varchar"
+			},
+			{
+				"name": "Me_AdditionalInfo",
+				"type": "varchar"
+			},
+			{
+				"name": "Msg_TransportDetails_TransportNumber",
+				"type": "varchar"
+			},
+			{
+				"name": "Msg_TransportDetails_ModeOfTransport",
+				"type": "varchar"
+			},
+			{
+				"name": "Msg_TransportDetails_ShippingMode",
+				"type": "varchar"
+			},
+			{
+				"name": "Msg_TransportDetails_AdditionalDetails",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Msg_TransportDetails_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Msg_Add",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Msg_WeightAndVolume",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Msg_Qty",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Msg_Txt",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Msg_AmountDetails",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Msg_Currency",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SeedesadvRecordSK",
+				"type": "bigint",
+				"precision": 19
+			}
+		],
+		"typeProperties": {
+			"schema": "stg",
+			"table": "MsgSeedesadv"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

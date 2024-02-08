@@ -1,0 +1,87 @@
+{
+	"name": "pl_stg_json_to_synapse_seedesadv",
+	"properties": {
+		"activities": [
+			{
+				"name": "df_stg_json_to_synapse_seedesadv",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [
+					{
+						"activity": "sp_truncate_staging",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "df_stg_json_to_synapse_seedesadv",
+						"type": "DataFlowReference",
+						"parameters": {
+							"DataFlowSourceFilePath": {
+								"value": "'@{pipeline().parameters.PipelineSourceFilePath}'",
+								"type": "Expression"
+							}
+						}
+					},
+					"staging": {
+						"linkedService": {
+							"referenceName": "zncswb2bedianalyticsprd-WorkspaceDefaultStorage",
+							"type": "LinkedServiceReference"
+						},
+						"folderPath": "synapsecopystaging"
+					},
+					"compute": {
+						"coreCount": 32,
+						"computeType": "MemoryOptimized"
+					},
+					"traceLevel": "None",
+					"runConcurrently": true,
+					"cacheSinks": {
+						"firstRowOnly": true
+					}
+				}
+			},
+			{
+				"name": "sp_truncate_staging",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "stg.sp_Seedesadv_TruncateStaging"
+				},
+				"linkedServiceName": {
+					"referenceName": "zncswb2bedianalyticsprd-WorkspaceDefaultSqlServer",
+					"type": "LinkedServiceReference",
+					"parameters": {
+						"DBName": "edianalyticsprd"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"PipelineSourceFilePath": {
+				"type": "string",
+				"defaultValue": "2019/07/30/SEEDESADV*.json"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-04-08T21:04:44Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

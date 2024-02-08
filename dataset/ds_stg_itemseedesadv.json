@@ -1,0 +1,89 @@
+{
+	"name": "ds_stg_itemseedesadv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "zncswb2bedianalyticsprd-WorkspaceDefaultSqlServer",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"DBName": "edianalyticsprd"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "File_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Me_MessageNumber",
+				"type": "varchar"
+			},
+			{
+				"name": "ItemPos_LineItemNumber",
+				"type": "varchar"
+			},
+			{
+				"name": "ItemPos_LineSubItemNumber",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ItemPos_CountryOfOrigin",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ItemPos_ItemDescription",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item_ItemNumber",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item_Qty",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item_AmountDetails",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item_Ref",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item_Add",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item_WeightAndVolume",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item_Txt",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item_DangerousGoods",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item_Pac_Package",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item_Pac_Pallet",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "stg",
+			"table": "ItemSeedesadv"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
